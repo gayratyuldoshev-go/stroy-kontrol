@@ -119,9 +119,14 @@
         margin-bottom: 8px;
     }
 
+    &__data {
+        flex-grow: 1;
+    }
+
     &__lists {
         display: flex;
         justify-content: space-between;
+        flex-grow: 2;
     }
 }
 
@@ -151,6 +156,12 @@
     .footer__bottom {
         margin-top: 100px;
     }
+
+    .footer__social {
+        margin-top: 5px;
+    }
+
+   
 }
 
 @media only screen and (max-width:  660px) {
@@ -161,6 +172,8 @@
             margin-bottom: 10px;
         }
     }
+
+    
 }
 
 @media only screen and (max-width:  490px) {

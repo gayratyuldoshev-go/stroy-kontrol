@@ -5,6 +5,10 @@
     font-weight: normal;
 }
 
+.navbar__item--active .navbar__link {
+    color: $navbar-hover;
+}
+
 .navbar__list {
     display: flex;
     margin: 0;
