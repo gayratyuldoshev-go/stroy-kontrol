@@ -1,0 +1,145 @@
+.liste-item {
+    max-width: 310px;
+    text-align: center;
+
+    &--first {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &::before {
+            content: "";
+            width: 48px;
+            height: 48px;
+            display: block;
+            background-image: url("../img/clothes.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-bottom: 20px;
+        }
+    }
+
+    &--second {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &::before {
+            content: "";
+            width: 48px;
+            height: 48px;
+            display: block;
+            background-image: url("../img/engaged.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-bottom: 20px;
+        }
+    }
+
+    &--third {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &::before {
+            content: "";
+            width: 48px;
+            height: 48px;
+            display: block;
+            background-image: url("../img/Compliance.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 20px;
+        }
+    }
+    
+}
+
+.liste-item__title {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.liste-item__text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+@media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+
+        .liste-item--first::before {
+            background-image: url("../img/clothes@2x.png");
+        }
+
+        .liste-item--second::before {
+            background-image: url("../img/engaged@2x.png");
+        }
+
+        .liste-item--third::before {
+            background-image: url("../img/Compliance@2x.png");
+        }
+}
+
+@media only screen and (max-width: 980px) {
+    .liste-item {
+        max-width: 280px;
+    }
+
+    .liste-item__title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .liste-item__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .liste-item {
+        max-width: 240px;
+    }
+
+    .liste-item__title {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .liste-item__text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .liste-item {
+        max-width: 100%;
+    }
+
+    .liste-item__title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .liste-item__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+

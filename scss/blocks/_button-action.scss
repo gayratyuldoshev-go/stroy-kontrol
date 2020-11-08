@@ -1,0 +1,40 @@
+@media only screen and (max-width: 1139px) {
+    .button-action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 543px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .button-action {
+        margin-bottom: 450px;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .button-action {
+        margin-bottom: 370px;
+    }
+}
+
+@media only screen and (max-width: 1139px) {
+    .button-action__link {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .button-action__link {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .button-action__link {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}

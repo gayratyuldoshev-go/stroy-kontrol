@@ -1,0 +1,17 @@
+.header__logo {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.header__logo-img {
+    display: block;
+    width: 236px;
+    height: 44px;
+}
+
+@media only screen and (max-width: 1239px) {
+    .header__logo-img {
+        width: 220px;
+        height: 42px;
+    }
+}

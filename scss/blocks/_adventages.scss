@@ -1,0 +1,51 @@
+.adventages {
+    padding-top: 48px;
+    padding-bottom: 72px;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 17px;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+        color: #212B31
+    }
+
+    &__text {
+        margin-bottom: 55px;
+        margin-top: 0;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+        color: #212B31;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__slider {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__lists {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .adventages__lists {
+        flex-direction: column;
+        align-items: center;
+    }   
+}

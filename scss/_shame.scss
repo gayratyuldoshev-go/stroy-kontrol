@@ -1,0 +1,19 @@
+.triangle-top {
+    @include uchburchak (15px, #fff);
+    border-bottom: 15px solid #000;
+}
+
+.triangle-right {
+    @include uchburchaklar (15px, #fff);
+    border-left: 15px solid green;
+}
+
+.triangle-bottom {
+    @include uchburchak (15px, #fff);
+    border-top: 15px solid red;
+}
+
+.triangle-left {
+    @include uchburchaklar (15px, #fff);
+    border-right: 15px solid blue;
+}

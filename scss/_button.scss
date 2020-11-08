@@ -1,0 +1,117 @@
+.button {
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 17px;
+
+    &--header {
+        color: #fff;
+        background-color: $general-bg;
+        font-size: 15px;
+        line-height: 16px;
+        padding: 9px 20px;
+        margin-left: 20px;
+        border: 1px solid #212B31;
+
+        &:hover {
+            background-color: #fff;
+            color: $general-bg;
+        }
+    }
+
+    &--bordered {
+        color: $general-bg;
+        border: 1px solid #DADEDF;
+        margin: 8px;
+        padding: 13px 25px;
+        background-color: #fff;
+
+        &:hover {
+            background-color: $general-bg;
+            color: #fff;
+            border: 1px solid #DADEDF;
+        }
+    }
+
+    &--hover {
+        background-color: $general-bg;
+        color: #fff;
+        padding: 13px 25px;
+        margin: 8px;
+
+        &:hover {
+            background-color: #fff;
+            color: $general-bg;
+        }
+    }
+
+    &--white {
+        background-color: $general-bg;
+        color: #fff;
+        border: 1px solid #DADEDF;
+        padding: 13px 25px;
+        margin: 8px;
+
+        &:hover {
+            background-color: #fff;
+            color: $general-bg;
+        }
+    }
+
+    &--hovered {
+        background-color: #fff;
+        color: $general-bg;
+        padding: 13px 25px;
+
+        &:hover {
+            background-color: $general-bg;
+            color: #fff;
+            border: 1px solid #DADEDF;
+
+        }
+    }
+}
+
+.header--open .button--header {
+    position: absolute;
+    z-index: 33;
+    top: 350px;
+    left: 43%;
+    font-size: 17px;
+    padding: 11px 20px;
+    margin-left: 0;
+    width: 163px;
+    text-align: center; 
+}
+
+.header--open .navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+@media only screen and (max-width: 1239px) {
+    .button--header {
+        font-size: 14px;
+        line-height: 14px;
+        padding: 8px 16px;
+
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .button--bordered {
+        font-size: 14px;
+        padding: 12px 15px;
+        text-align: center;
+    }
+
+    .button--white {
+        font-size: 14px;
+        padding: 12px 15px;
+        text-align: center;
+    }
+
+}
+

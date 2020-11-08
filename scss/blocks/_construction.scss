@@ -1,0 +1,162 @@
+.construction {
+    padding-top: 71px;
+    padding-bottom: 39px;
+
+    &__heading {
+        max-width: 1015px;
+        font-weight: normal;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+        color: #212B31;
+        margin-bottom: 16px;
+        margin-top: 0;
+    }
+
+    &__text {
+        max-width: 1015px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 40px;
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+        color: #72787D;
+    
+        &::after {
+            content: "";
+            width: 1040px;
+            height: 304px;
+            display: block;
+            margin-top: 40px;
+            margin-bottom: 144px;
+            background-image: url("../img/contruction.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+
+    &__title {
+        max-width: 781px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 168px;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+        color: #212B31;
+    }
+
+    &__box {
+        max-width: 1006px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    
+        &::after {
+            content: "";
+            width: 464px;
+            height: 400px;
+            display: block;
+            margin-left: 20px;
+            background-image: url("../img/two-men.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+@media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+        
+        .construction__text::after {
+            background-image: url("../img/construction@2x.png");
+        }
+
+        .construction__box::after {
+            background-image: url("../img/two-men@2x.png");
+        }
+
+}
+
+@media only screen and (max-width: 1095px) {
+    .construction__heading {
+        font-size: 30px;
+        line-height: 44px;
+    }
+
+    .construction__title {
+        font-size: 30px;
+        line-height: 44px;
+    }
+    
+    .construction__text {
+        max-width: 885px;
+        font-size: 18px;
+
+        &::after {
+            width: 99%;
+            margin-bottom: 90px;
+        }
+    }
+
+    .construction__box::after {
+        width: 99%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 842px) {
+    .construction__text::after {
+        margin-bottom: 10px;
+    }
+
+    .construction__title {
+        margin-bottom: 120px;
+    }
+
+    .construction__box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .construction__box::after {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    .construction__text::after {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .construction__heading {
+        font-size: 26px;
+        line-height: 24px;  
+    }
+
+    .construction__text {
+        font-size: 16px;
+        line-height: 26px;  
+    }
+
+    .construction__title {
+        font-size: 26px;
+        line-height: 32px;  
+    }
+}

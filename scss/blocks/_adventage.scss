@@ -1,0 +1,98 @@
+.adventage {
+    max-width: 435px;
+    display: flex;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    &__heading {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        color: #212B31;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #72787D;
+        margin-top: 0;
+    }
+
+    &--position::before {
+        content: "";
+        width: 150px;
+        height: 48px;
+        display: block;
+        margin-right: 16px; 
+        background-image: url("../img/advantage-software.png");
+        background-repeat: no-repeat;
+    }
+
+    &--great::before {
+        content: "";
+        width: 130px;
+        height: 48px;
+        display: block;
+        margin-right: 16px; 
+        background-image: url("../img/advantage-potential.png");
+        background-repeat: no-repeat;
+    }
+
+    &--leader::before {
+        content: "";
+        width: 90px;
+        height: 48px;
+        display: block;
+        margin-right: 16px; 
+        background-image: url("../img/advantage-leader.png");
+        background-repeat: no-repeat;
+    }
+
+    &--security::before {
+        content: "";
+        width: 70px;
+        height: 48px;
+        display: block;
+        margin-right: 16px; 
+        background-image: url("../img/advantage-security.png");
+        background-repeat: no-repeat;
+    }
+}
+
+@media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+
+        .adventage--position::before {
+            background-image: url("../img/advantage-software@2x.png");
+        }
+
+        .adventage--great::before {
+            background-image: url("../img/advantage-potential@2x.png");
+        }
+
+        .adventage--leader::before {
+            background-image: url("../img/advantage-leader@2x.png");
+        }
+
+        .adventage--security::before {
+            background-image: url("../img/advantage-security@2x.png");
+        }
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .adventage {
+        max-width: 600px;
+    }   
+}

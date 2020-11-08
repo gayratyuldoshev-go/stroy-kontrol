@@ -1,0 +1,149 @@
+.about-info {
+
+    &__heading {
+        margin-top: 0;
+        margin-bottom: 19px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        color: #212B31;
+    }
+
+    &__text {
+        max-width: 470px;
+        margin-top: 0;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #72787D;
+    }
+
+    &--car {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &::after {
+            content: "";
+            width: 402px;
+            height: 272px;
+            display: block;
+            background-image: url("../img/worker.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &--men {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+        &::after {
+            content: "";
+            width: 402px;
+            height: 272px;
+            display: block;
+            background-image: url("../img/men.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &--worker {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &::after {
+            content: "";
+            width: 402px;
+            height: 272px;
+            display: block;
+            background-image: url("../img/car.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+@media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+
+        .about-info--car::after {
+            background-image: url("../img/worker@2x.png");
+        }
+
+        .about-info--men::after {
+            background-image: url("../img/men@2x.png");
+        }
+
+        .about-info--worker::after {
+            background-image: url("../img/car@2x.png");
+        }
+
+}
+
+
+@media only screen and (max-width: 930px) {
+    .about-info {
+        flex-direction: column;
+        text-align: center;
+
+        &__text {
+            max-width: 680px;
+        }
+
+        &:not(:first-child) {
+            margin-top: 30px;
+        }
+
+        &--car {
+            flex-direction: column-reverse;
+
+            &::after {
+                margin-bottom: 30px;
+            }
+        }
+
+        &--men {
+            flex-direction: column-reverse;
+
+            &::after {
+                margin-bottom: 30px;
+            }
+        }
+
+        &--worker {
+            flex-direction: column-reverse;
+
+            &::after {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 490px) {
+    .about-info--car::after {
+        width: 99%;
+        margin-bottom: 10px;
+    }
+
+    .about-info--men::after {
+        width: 99%;
+        margin-bottom: 10px;
+    }
+
+    .about-info--worker::after {
+        width: 99%;
+        margin-bottom: 10px;
+    }
+}

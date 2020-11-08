@@ -1,0 +1,9 @@
+@mixin uchburchak ($border-size, $color) {
+    border-left: $border-size solid $color;
+    border-right: $border-size solid $color;
+}
+
+@mixin uchburchaklar ($border-size, $color) {
+    border-top: $border-size solid $color;
+    border-bottom: $border-size solid $color;
+}

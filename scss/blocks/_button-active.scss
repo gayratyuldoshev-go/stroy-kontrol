@@ -1,0 +1,10 @@
+.button-active {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 490px) {
+    .button-active {
+        flex-direction: column;
+    }
+}

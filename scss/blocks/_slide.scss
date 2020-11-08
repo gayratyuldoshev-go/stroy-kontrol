@@ -1,0 +1,174 @@
+.slide {
+    max-width: 614px;
+    background-color: #F6F8F9;
+    border-radius: 5px;
+    padding: 60px 92px 56px 87px;
+
+    &__feedback {
+        position: relative;
+        z-index: 1;
+        max-width: 435px;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 48px;
+        color: #212B31;
+        padding: 0;
+        margin: 0;
+
+        &::before {
+            content: "";
+            width: 101px;
+            height: 77px;
+            position: absolute;
+            z-index: 1;
+            top: -25px;
+            left: -45px;
+            background-image: url("../img/quote.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        margin-top: 28px;
+
+        &::before {
+            content: "";
+            width: 48px;
+            height: 48px;
+            margin-right: 8px;
+            display: block;
+            background-image: url("../img/man.png");
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__bottom-name {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #212B31;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    &__bottom-profession {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #72787D;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__list {
+        margin-top: 28px;
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__button-active {
+        content: "";
+        width: 8px;
+        height: 8px;
+        display: block;
+        background-color: #036FC7;
+        border-radius: 50%;
+        margin: 0;
+        padding: 0;
+        margin-right: 8px;
+        border: none;
+    }
+
+    &__button-regular {
+        content: "";
+        width: 8px;
+        height: 8px;
+        display: block;
+        background-image: rgba(3, 111, 199, 0.2);
+        border-radius: 50%;
+        margin: 0;
+        padding: 0;
+        margin-right: 8px;
+        border: none;
+    }
+}
+
+@media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+
+        .slide__bottom::before {
+            background-image: url("../img/man@2x.png");
+        }
+
+}
+
+@media only screen and (max-width: 1095px) {
+    .slide {
+        padding: 60px 72px 56px 67px;
+        
+        &__feedback {
+            font-size: 26px;
+            line-height: 42px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .slide {
+        margin-top: 20px;
+        padding: 60px 92px 56px 87px;
+
+        &__feedback {
+            font-size: 30px;
+            line-height: 48px;
+        }
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .slide {
+        max-width: 99%;
+        padding: 60px 62px 56px 50px;
+        margin: 0;
+
+        &__feedback {
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        &__bottom::before {
+            margin-right: 20px;
+        }
+
+        &__bottom-before {
+            max-width: 331px;
+        }
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .slide__bottom {
+        flex-direction: column;
+
+        &::before {
+            margin-bottom: 10px;
+        }
+    }
+
+    .slide__bottom-before {
+        text-align: center;
+    }
+}

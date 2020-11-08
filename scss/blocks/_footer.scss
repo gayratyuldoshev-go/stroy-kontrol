@@ -1,0 +1,122 @@
+.footer {
+    padding-top: 75px;
+    padding-bottom: 33px;
+
+    &__top {
+        max-width: 1056px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bottom {
+        max-width: 1056px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__logo {
+        display: inline-block;
+        vertical-align: baseline;
+    }
+
+    &__logo-img {
+        display: block;
+    }
+
+    &__address {
+        margin-top: 23px;
+        margin-bottom: 10px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #72787D;
+    }
+
+    &__email {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #72787D;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__phone {
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #72787D;
+
+        &:hover {
+            color: $navbar-hover;
+        }
+    }
+
+    &__social {
+        margin-top: 20px;
+
+        &-media:hover {
+            fill: rgb(0, 69, 197);
+        }
+    }
+
+    &__heading {
+        margin-top: 0;
+        margin-bottom: 22px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #212B31;
+    }
+
+    &__nav {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 160px;
+        padding-top: 32px;
+        border-top: 1px solid #DADEDF;
+
+        &-text {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #72787D;
+        }
+
+        &-description {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #72787D;
+        }
+    }
+
+    &__product .nav-item:first-child {
+        margin-bottom: 8px;
+    }
+
+    &__service .nav-item:first-child {
+        margin-bottom: 8px;
+    }
+
+    &__company .nav-item:first-child {
+        margin-bottom: 8px;
+    }
+}
+
+@media only screen and 

@@ -1,0 +1,114 @@
+.curer {
+    max-width: 1056px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 72px;
+    padding-bottom: 72px;
+
+    &__heading {
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+        color: #212B31;
+        font-weight: normal;
+        margin-top: 0;
+        margin-bottom: 21px;
+    }
+
+    &__text {
+        max-width: 643px;
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+        font-weight: normal;
+        color: #72787D;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 55px;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__description {
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 32px;
+        color: #72787D;
+        text-align: center;
+    
+        &-link {
+            position: relative;
+            z-index: 1;
+            font-weight: normal;
+            color: $general-bg;
+            text-decoration: none;
+        }
+    
+        &-link::before {
+            content: "";
+            width: 100%;
+            height: 15px;
+            position: absolute;
+            z-index: -1;
+            bottom: -4px;
+            left: 0;
+            background-color: rgb(255, 210, 128);
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 1239px) {
+    .curer__heading {
+        line-height: 36px;
+        font-size: 28px;
+    }
+
+    .curer__text {
+        line-height: 24px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .curer__heading {
+        line-height: 20px;
+        font-size: 24px;
+    }
+
+    .curer__text {
+        max-width: 400px;
+        font-size: 14px;
+    }
+
+    .curer__description {
+        font-size: 16px;
+    }
+
+    .curer__list {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .curer__list {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    .curer__description {
+        font-size: 14px;
+    }
+}

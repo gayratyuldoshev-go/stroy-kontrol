@@ -1,0 +1,93 @@
+.guaranty-item {
+    max-width: 318px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__heading {
+        margin-top: 0;
+        margin-bottom: 11px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        color: #212B31;
+    }
+
+    &__description {
+        margin-top: 0;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #72787D;
+    }
+
+    &--carbon::before {
+        content: "";
+        width: 48px;
+        height: 48px;
+        margin-bottom: 19px;
+        display: block;
+        background-image: url("../img/toxic.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &--waste::before {
+        content: "";
+        width: 48px;
+        height: 48px;
+        margin-bottom: 19px;
+        display: block;
+        background-image: url("../img/waste.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &--people::before {
+        content: "";
+        width: 48px;
+        height: 48px;
+        margin-bottom: 19px;
+        display: block;
+        background-image: url("../img/people.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+@media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+
+        .guaranty-item--carbon::before {
+            background-image: url("../img/toxic@2x.png");
+        }
+
+        .guaranty-item--waste::before {
+            background-image: url("../img/waste@2x.png");
+        }
+
+        .guaranty-item--people::before {
+            background-image: url("../img/people@2x.png");
+        }
+
+}
+
+@media only screen and (max-width: 770px) {
+    .guaranty-item {
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}

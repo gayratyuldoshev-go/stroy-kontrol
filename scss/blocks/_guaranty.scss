@@ -1,0 +1,59 @@
+.guaranty {
+    padding-top: 72px;
+    padding-bottom: 144px;
+    max-width: 1056px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__title {
+        position: relative;
+        z-index: 1;
+        margin-top: 0;
+        margin-bottom: 17px;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+        color: #212B31;
+
+        &::after {
+            content: "";
+            width: 42px;
+            height: 40px;
+            position: absolute;
+            z-index: 1;
+            top: -19px;
+            background-image: url("../img/leaf.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &__text {
+        margin-top: 0;
+        margin-bottom: 48px;
+        max-width: 857px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+        color: #72787D;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 64px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .guaranty__list {
+        flex-direction: column;
+    }
+}
