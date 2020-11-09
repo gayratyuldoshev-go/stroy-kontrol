@@ -2717,26 +2717,31 @@ img {
 
 .adventage--security::before {
   content: "";
-  width: 70px;
+  width: 60px;
   height: 48px;
   display: block;
-  margin-right: 16px;
   background-image: url("../img/advantage-security.png");
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   background-repeat: no-repeat;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .adventage--position::before {
     background-image: url("../img/advantage-software@2x.png");
+    background-size: contain;
   }
   .adventage--great::before {
     background-image: url("../img/advantage-potential@2x.png");
+    background-size: contain;
   }
   .adventage--leader::before {
     background-image: url("../img/advantage-leader@2x.png");
+    background-size: contain;
   }
   .adventage--security::before {
     background-image: url("../img/advantage-security@2x.png");
+    background-size: contain;
   }
 }
 
@@ -2793,6 +2798,8 @@ img {
   width: 48px;
   height: 48px;
   margin-right: 8px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   display: block;
   background-image: url("../img/man.png");
   background-repeat: no-repeat;
@@ -2860,6 +2867,7 @@ img {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .slide__bottom::before {
     background-image: url("../img/man@2x.png");
+    background-size: contain;
   }
 }
 
